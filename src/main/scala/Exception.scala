@@ -20,7 +20,7 @@ object Exceptions {
       shortString + " (" + jgetString(info, "input") + ")"
     }
   }
-  
+
   case class MappingException(val msg: String, val path: String = "") extends SystemException("Mapping", JsonObject("msg" -> msg, "path" -> path))
 
 }
